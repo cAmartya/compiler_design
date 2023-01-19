@@ -3,8 +3,9 @@
 #include <stdlib.h>
 #include <math.h>
 
+int temp=0;
 double result = 0;
-int operation = 0; /* 1 = +, 2 = -, 3 = *, 4 = /, 5 = ^ */
+int operation = 0; /* 1 = +, 2 = -, 3 = *, 4 = /, 5 = ^, 6 = % */
 double number = 0;
 
 %}
@@ -30,7 +31,10 @@ number {digit}+({\.}?{digit}+)?
             result /= number;
             break;
         case 5:
-            for(int i=0; i<number; i++) result *= result;
+            result = pow(result, number);
+            break;
+        case 6:
+            result = (int)result % (int)number;
             break;
         default:
             result = number;
@@ -44,6 +48,7 @@ number {digit}+({\.}?{digit}+)?
 "*"    { operation = 3; }
 "/"    { operation = 4; }
 "^"    { operation = 5; }
+"%"    { operation = 6; }
 
 \n    { printf("%.2lf\n", result); }
 .    { /* ignore everything else */; }

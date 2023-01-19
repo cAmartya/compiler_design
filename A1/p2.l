@@ -6,8 +6,9 @@
 .* { printf("NOT MATCHED"); }
 %%
 
+int yywrap(){}
+
 int main()  {
     yylex();
     return 0;   
 }
-1

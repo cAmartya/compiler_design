@@ -1,0 +1,11 @@
+error introduced for question b
+// comments are ignored
+int main()
+{   
+    float d = 1.5;
+    int a = 10;
+    int c = a + b;
+    int b = 20;
+    int 34d = 56;       // will give error as variable names can't start with digit
+    return 0;
+}

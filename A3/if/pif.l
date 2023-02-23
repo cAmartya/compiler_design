@@ -1,5 +1,5 @@
 %{
-    #include "1.tab.c"
+    #include "y.tab.h"
 %}
 
 

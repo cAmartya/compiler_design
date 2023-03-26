@@ -49,26 +49,26 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    IF = 258,
-    ELSE = 259,
-    EXP = 260,
-    STMT = 261,
-    NBS = 262,
-    NBE = 263,
-    CBS = 264,
-    CBE = 265,
+    I = 258,
+    V = 259,
+    X = 260,
+    L = 261,
+    C = 262,
+    BRS = 263,
+    BRE = 264,
+    POW = 265,
     END = 266
   };
 #endif
 /* Tokens.  */
-#define IF 258
-#define ELSE 259
-#define EXP 260
-#define STMT 261
-#define NBS 262
-#define NBE 263
-#define CBS 264
-#define CBE 265
+#define I 258
+#define V 259
+#define X 260
+#define L 261
+#define C 262
+#define BRS 263
+#define BRE 264
+#define POW 265
 #define END 266
 
 /* Value type.  */

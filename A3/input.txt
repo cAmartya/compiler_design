@@ -1,0 +1,5 @@
+if(0>4) {
+    printf("WRONG");
+}else {
+    printf("RIGHT");
+}
